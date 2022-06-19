@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation = "http://www.springframework.org/schema/beanshttp://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id = "c1" class ="com.zee.bank.beans.Customer">
+<property name="name" value="bipinsingh"></property>
+<property name="list" >
+<list>
+<ref bean="c2"></ref>
+<ref bean="c3"></ref>
+</list>
+</property>
+</bean>
+<bean id = "c2" class ="com.zee.bank.beans.Address">
+<property name="streetno" value="420"></property>
+<property name="StreetName" value="Belandur"></property>
+<property name="City" value="Bangalore"></property>
+<property name="State" value="Karnataka"></property>
+<property name="Country" value="India"></property>
+<property name="pincode" value="575019"></property>
+</bean><bean id = "c3" class ="com.zee.bank.beans.Address">
+<property name="streetno" value="240"></property>
+<property name="StreetName" value="Kulai"></property>
+<property name="City" value="Mangalore"></property>
+<property name="State" value="Karnataka"></property>
+<property name="Country" value="India"></property>
+<property name="pincode" value="575001"></property>
+</bean></beans>
+
